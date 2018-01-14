@@ -1,0 +1,11 @@
+<h1><%= @user.email %> with the id <%= @user.id %></h1>
+<h2>greets you to his humble page, and would be flattered to know you read his oppinions about shit</h2>
+
+
+<ul>
+  <% @user.opinions.each do |opinion| %>
+    <li>
+      <%= link_to opinion.preview, "/opinions/" + opinion.id.to_s%>
+    </li>
+  <% end %>
+</ul>

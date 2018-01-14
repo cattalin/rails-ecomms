@@ -1,0 +1,10 @@
+<h1>Welcome <%= current_user.email %> with the id <%= current_user.id %></h1>
+
+
+<ul>
+  <% current_user.opinions.each do |opinion| %>
+    <li>
+      <%= link_to opinion.preview, "opinions/" + opinion.id.to_s%>
+    </li>
+  <% end %>
+</ul>

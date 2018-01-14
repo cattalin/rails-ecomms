@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Opinions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Preview</th>
+      <th>Explanation</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+
+  <tbody>
+    <% @opinions.each do |opinion| %>
+      <tr>
+        <td><%= opinion.preview %></td>
+        <td><%= opinion.explanation %></td>
+        <td><%= opinion.user_id %></td>
+        <%= link_to image_tag(opinion.proof.url(:medium), class: 'media-object'), opinion.proof.url, target: '_blank' %>
+        <td><%= current_user.id %></td>
+        <td><%= link_to 'Show', opinion %></td>
+
+        <% if current_user.id == opinion.user_id %>
+          <td><%= link_to 'Edit', edit_opinion_path(opinion) %></td>
+          <td><%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<div class=”container”>
+  <div class=”row”>
+
+    <% @opinions.each do |opinion| %>
+      <div class=”col-md-3”>
+        <%= opinion.preview %>
+      </div>
+      <div class=”col-md-3”>
+        <%= opinion.explanation %>
+      </div>
+      <div class=”col-md-3”>
+        <%= opinion.user_id %>
+      </div>
+      <div class=”col-md-3”>
+        <%= link_to image_tag(opinion.proof.url(:medium), class: 'media-object'), opinion.proof.url, target: '_blank' %>
+      </div>
+      <div class=”col-md-3”>
+        <%= current_user.id %>
+        <%= link_to 'Show', opinion %>
+      </div>
+
+        <% if current_user.id == opinion.user_id %>
+          <td><%= link_to 'Edit', edit_opinion_path(opinion) %></td>
+          <td><%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+
+    <% end %>
+
+  </div>
+</div>
+
+
+<br>
+
+<%= link_to 'New Opinion', new_opinion_path %>
