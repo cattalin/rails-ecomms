@@ -2,9 +2,5 @@
 
 
 <ul>
-  <% current_user.opinions.each do |opinion| %>
-    <li>
-      <%= link_to opinion.preview, "opinions/" + opinion.id.to_s%>
-    </li>
-  <% end %>
+  <%= render 'opinions/list', opinions: current_user.opinions %>
 </ul>

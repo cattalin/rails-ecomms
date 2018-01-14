@@ -65,8 +65,7 @@ class OpinionsController < ApplicationController
   # DELETE /opinions/1
   # DELETE /opinions/1.json
   def destroy
-    does_it = belongs_to_current_user
-    if does_it
+    if belongs_to_current_user or current_user.supplier?
       @opinion.destroy
 
       respond_to do |format|

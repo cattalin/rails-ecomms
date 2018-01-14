@@ -1,0 +1,25 @@
+<div class="row text-center">
+
+  <% opinions.each do |opinion| %>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+
+        <%= link_to image_tag(opinion.proof.url(:medium), class: 'card-img-top img-rounded'), opinion.proof.url, target: '_blank' %>
+
+        <div class="card-body">
+          <h4 class="card-title"><%= opinion.preview %></h4>
+          <p class="card-text"><%= opinion.explanation %></p>
+        </div>
+        <div class="card-footer">
+          <%= link_to 'Show', opinion, class: 'btn btn-primary' %>
+          <% if current_user.id == opinion.user_id or current_user.supplier? %>
+            <%= link_to 'Edit', edit_opinion_path(opinion), class: 'btn btn-primary' %>
+            <%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+</div>

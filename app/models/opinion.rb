@@ -4,7 +4,7 @@ class Opinion < ApplicationRecord
   has_attached_file :proof,
                     url: "/system/:hash.:extension",
                     hash_secret: "abc123",
-                    styles: { medium: "301x301>", thumb: "100x100>" }
+                    styles: { medium: ["301x301#", :jpg], thumb: ["100x100#", :jpg] }
   validates_attachment_content_type :proof, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
   
 end
