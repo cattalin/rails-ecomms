@@ -32,9 +32,9 @@ class OpinionsController < ApplicationController
   # POST /opinions.json
   def create
     if user_signed_in?
-      @opinion = Opinion.new({preview:opinion_params[:preview], explanation:opinion_params[:explanation], proof:opinion_params[:proof], user_id: current_user.id})
-      # @opinion = Opinion.new(opinion_params)
-      # @opinion.user_id = current_user.id
+      # @opinion = Opinion.new({preview:opinion_params[:preview], explanation:opinion_params[:explanation], proof:opinion_params[:proof], user_id: current_user.id})
+      @opinion = Opinion.new(opinion_params)
+      @opinion.user = current_user
       respond_to do |format|
         if @opinion.save
           format.html { redirect_to @opinion, notice: 'Opinion was successfully created. for the user'}

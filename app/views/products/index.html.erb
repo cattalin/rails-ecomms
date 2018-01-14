@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products</h1>
+
+
+<%= render 'list', products: @products %>
+
+<br>
+
+<% if current_user.supplier? %>
+<%= link_to 'New Product', new_product_path %>
+<% end %>

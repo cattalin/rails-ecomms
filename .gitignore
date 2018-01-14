@@ -24,6 +24,10 @@ vendor/
 public/
 /public/*
 
+
+app/assets/images/
+app/assets/images/*
+
 /node_modules
 /yarn-error.log
 

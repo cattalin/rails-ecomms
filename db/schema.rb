@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180114122010) do
+ActiveRecord::Schema.define(version: 20180114160036) do
 
   create_table "opinions", force: :cascade do |t|
     t.string "preview"
@@ -23,6 +23,20 @@ ActiveRecord::Schema.define(version: 20180114122010) do
     t.integer "proof_file_size"
     t.datetime "proof_updated_at"
     t.index ["user_id"], name: "index_opinions_on_user_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.integer "price"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "thumbnail_file_name"
+    t.string "thumbnail_content_type"
+    t.integer "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
+    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
