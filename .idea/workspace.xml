@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8808cade-ef95-4a35-80bf-7621cb379154" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/opinions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/opinions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/_list.html.erb" afterPath="$PROJECT_DIR$/app/views/products/_list.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -54,61 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="420">
+              <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="33" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/opinions/index.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="450">
+              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -126,8 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>therubyracer</find>
-      <find>gem &quot;less-rails&quot;</find>
       <find>less-rails</find>
       <find>Please install gem 'therubyracer' to use Less</find>
       <find>v8</find>
@@ -149,16 +101,22 @@
       <find>set_opinion</find>
       <find>collapse</find>
       <find>o</find>
-      <find>proof</find>
       <find>email_field</find>
       <find>sign_up_params</find>
       <find>username</find>
       <find>signed</find>
       <find>notice</find>
       <find>email</find>
+      <find>title</find>
+      <find>preview</find>
+      <find>proof</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
+      <replace>product</replace>
+      <replace>description</replace>
+      <replace>price</replace>
+      <replace>explanation</replace>
       <replace>thumbnail</replace>
     </replaceStrings>
     <dirStrings>
@@ -200,8 +158,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/opinions/_list.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180114151628_create_products.rb" />
-        <option value="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180114160036_add_thumbnail_to_product.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180114170225_add_username_to_users.rb" />
@@ -222,6 +178,8 @@
         <option value="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -489,12 +447,12 @@
       <workItem from="1514587848318" duration="634000" />
       <workItem from="1514588724322" duration="12421000" />
       <workItem from="1515012600828" duration="1374000" />
-      <workItem from="1515790002586" duration="42351000" />
+      <workItem from="1515790002586" duration="44042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78240000" />
+    <option name="totallyTimeSpent" value="79931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -860,14 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/opinions/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -884,18 +826,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/glyphicons.css">
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="45">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/opinions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/glyphicons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="435">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -916,34 +882,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/opinions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        <state relative-caret-position="210">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="420">
+          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="33" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding />
         </state>
       </provider>

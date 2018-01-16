@@ -11,24 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :product_title %>
+
+  <div class="form-group">
+    <%= form.label :title, class: "control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= form.text_field :title, id: :product_title, class: "form-control", placeholder: "Enter a title"  %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :product_description %>
+  <div class="form-group">
+    <%= form.label :description, class: "control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= form.text_field :description, id: :product_description, class: "form-control", placeholder: "Enter a description"  %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price, id: :product_price %>
+  <div class="form-group">
+    <%= form.label :price, class: "control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= form.number_field :price, id: :product_price, class: "form-control", placeholder: "Enter a price"  %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :thumbnail %>
-    <%= form.file_field :thumbnail, class: 'form-control'%>
+  <div class="form-group">
+    <%= form.label :thumbnail, class: "control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= form.file_field :thumbnail, id: :opinion_explanation, class: "form-control"%>
+    </div>
   </div>
 
   <div class="actions">
