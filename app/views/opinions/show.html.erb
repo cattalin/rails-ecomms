@@ -1,4 +1,12 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <div class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Success!</strong> <%= notice %>
+  </div>
+<% end %>
+
+
+
 
 <p>
   <strong>Preview:</strong>
@@ -12,7 +20,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @opinion.user_id %>
+  <%= @opinion.user.username %>
 </p>
 
 <%= link_to 'Edit', edit_opinion_path(@opinion) %> |

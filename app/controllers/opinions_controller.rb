@@ -12,6 +12,7 @@ class OpinionsController < ApplicationController
   # GET /opinions/1
   # GET /opinions/1.json
   def show
+  
   end
 
   # GET /opinions/new
@@ -37,7 +38,7 @@ class OpinionsController < ApplicationController
       @opinion.user = current_user
       respond_to do |format|
         if @opinion.save
-          format.html { redirect_to @opinion, notice: 'Opinion was successfully created. for the user'}
+          format.html { redirect_to @opinion, notice: 'Opinion was successfully created for this user!'}
           format.json { render :show, status: :created, location: @opinion }
         else
           format.html { render :new }

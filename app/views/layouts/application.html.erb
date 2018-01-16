@@ -9,6 +9,7 @@
     <%= csrf_meta_tags %>
 
     <link href="https://blackrockdigital.github.io/startbootstrap-heroic-features/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/stylesheets/glyphicons.css" rel="stylesheet">
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -39,6 +40,9 @@
           <li class="nav-item <%= 'active' if params[:controller] == 'opinions' %>">
             <a class="nav-link" href="/opinions">Opinions</a>
           </li>
+          <li class="nav-item <%= 'active' if params[:controller] == 'products' %>">
+            <a class="nav-link" href="/products">Products</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -67,18 +71,36 @@
     </div>
   </nav>
 
+
+  <br/>
+  <br/>
+
+
   <div class="container theme-showcase">
 
     <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
+      <div class="alert alert-success alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Success!</strong> <%= notice %>
+      </div>
     <% end %>
     <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
+      <div class="alert alert-danger alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Error!</strong> <%= alert %>
+      </div>
     <% end %>
+
+
 
     <div class="jumbotron">
       <%= yield %>
+
+      <!--<button type="button" class="btn btn-default">-->
+        <!--<span class="glyphicon glyphicon-search"></span> Search-->
+      <!--</button>-->
     </div>
+
 
 
   </div> <!-- /container -->

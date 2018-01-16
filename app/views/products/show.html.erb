@@ -1,5 +1,9 @@
-<p id="notice"><%= notice %></p>
-
+<% if notice %>
+  <div class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Success!</strong> <%= notice %>
+  </div>
+<% end %>
 <p>
   <strong>Title:</strong>
   <%= @product.title %>
@@ -17,7 +21,7 @@
 
 <p>
   <strong>Supplier:</strong>
-  <%= @supplier.username %>
+  <%= link_to @supplier.username, "/users/" + @supplier.id.to_s  %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
