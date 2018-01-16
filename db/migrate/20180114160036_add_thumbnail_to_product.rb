@@ -4,6 +4,6 @@ class AddThumbnailToProduct < ActiveRecord::Migration[5.1]
   end
   
   def down
-    remove_attachment :products, :thumbnail
+    remove_attachment :opinions, :thumbnail
   end
 end

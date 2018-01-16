@@ -14,4 +14,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :opinions, dependent: :destroy
+  has_many :products, dependent: :destroy
 end
