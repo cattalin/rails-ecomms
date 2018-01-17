@@ -1,2 +1,14 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+
+<% if notice %>
+  <div class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    <strong>Success!</strong> <%= notice %>
+  </div>
+<% end %>
+
+<h1>Products in the <%= @category.name %> category</h1>
+
+
+<%= render 'products/list', products: @category.products %>
+
+<br>
