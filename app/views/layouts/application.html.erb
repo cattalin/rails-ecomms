@@ -77,23 +77,21 @@
 
 
   <div class="container theme-showcase">
-
-    <% if notice %>
-      <div class="alert alert-success alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <strong>Success!</strong> <%= notice %>
-      </div>
-    <% end %>
-    <% if alert %>
-      <div class="alert alert-danger alert-dismissable">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <strong>Error!</strong> <%= alert %>
-      </div>
-    <% end %>
-
-
-
     <div class="jumbotron">
+
+      <% if notice %>
+        <div class="alert alert-success alert-dismissable">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+          <strong>Success!</strong> <%= notice %>
+        </div>
+      <% end %>
+      <% if alert %>
+        <div class="alert alert-danger alert-dismissable">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+          <strong>Error!</strong> <%= alert %>
+        </div>
+      <% end %>
+
       <%= yield %>
 
       <!--<button type="button" class="btn btn-default">-->
