@@ -8,14 +8,19 @@
         <%= link_to image_tag(opinion.proof.url(:medium), class: 'card-img-top img-rounded'), opinion.proof.url %>
 
         <div class="card-body">
-          <h4 class="card-title"><%= opinion.preview %></h4>
-          <p class="card-text"><%= opinion.explanation %></p>
+          <h4 class="card-title"><%= link_to opinion.preview, opinion, class: 'btn-link text-info' %></h4>
         </div>
+
         <div class="card-footer">
-          <%= link_to 'Show', opinion, class: 'btn btn-primary' %>
+          <p class="card-text">
+            <%= link_to opinion.explanation, opinion, class: 'btn-link text-muted' %>
+          </p>
+
           <% if current_user.id == opinion.user_id or current_user.supplier? %>
+          <div>
             <%= link_to 'Edit', edit_opinion_path(opinion), class: 'btn btn-primary' %>
             <%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
+          </div>
           <% end %>
         </div>
       </div>

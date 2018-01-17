@@ -5,6 +5,8 @@
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card">
 
+        <br/>
+
         <%= link_to image_tag(product.thumbnail.url(:medium), class: 'card-img-top img-rounded'), product %>
 
         <div class="card-body">
@@ -12,13 +14,19 @@
             <%= link_to  product.title, product, class: 'btn-link text-info'%>
           </h4>
         </div>
+
         <div class="card-footer">
-          <%= link_to 'Show', product, class: 'btn btn-primary' %>
+          <p class="card-text">
+            <%= link_to "Price: " + product.price.to_s, product, class: 'btn-link text-muted' %>
+          </p>
           <% if current_user.id == product.user_id or current_user.supplier? %>
-            <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-primary' %>
-            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
+            <div>
+              <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-primary' %>
+              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning' %>
+            </div>
           <% end %>
         </div>
+
       </div>
     </div>
 
